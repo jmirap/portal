@@ -38,7 +38,7 @@ Si no es té prou clar aquest principi, millor no posar-s'hi.
 
 ### 3. Ocultar els detalls de la implementació.
 
-Un dels errors que sovint cometen els sistemes distribuïts és el d'acoblar excessivament els seus serveis entre ells. Dissenyar i crear **contextos limitats**, amb abast determinat i sense interseccions amb altres serveis. Com està fet el servei per dins, no ha d'afectar a com els seus clients el consumeixen. De la mateixa manera, com més clients de diferents tecnologies pugui tenir un servei, més èxit tindrà i més podrà evolucionar. Per tant cal **evitar a tota costa**: 
+Un dels errors que sovint cometen els sistemes distribuïts és el d'acoblar excessivament els seus serveis entre ells. Cal dissenyar i crear microserveis amb **contextos limitats**, amb abast determinat i sense interseccions amb altres serveis. Com està fet el servei per dins, no ha d'afectar a com els seus clients el consumeixen. De la mateixa manera, com més clients de diferents tecnologies pugui tenir un servei, més èxit tindrà i més podrà evolucionar. Per tant cal **evitar a tota costa**: 
 
 * **accessos directes a la base de dades** del nostre servei, 
 
@@ -46,7 +46,7 @@ Un dels errors que sovint cometen els sistemes distribuïts és el d'acoblar exc
 
 * utilitzar la distribució de **clients o agents** com a mitjà de connexió als nostres serveis. En aquest cas la distribució de clients i el seu manteniment és un maldecap addicional. 
 
-**Com més universals siguin els protocols i la forma de cridar als nostres serveis, millor**. **REST** és potser el paradigma d'aquest principi.
+**Com més universals siguin els protocols i la forma de cridar als nostres serveis, millor**. **REST**, basata en HTTP i JSON, és potser el paradigma d'aquest principi.
 
 ### 4. Descentralitzar-ho tot.
 
